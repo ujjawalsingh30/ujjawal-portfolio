@@ -156,7 +156,7 @@ export const educationData = [
     // color: "pink"
   },
   {
-    role: "Junior Developer",
+    role: "S.R.C.H.S. (+2) RAJAPAKAR VAISHALI (BIHAR)",
     company: "10th - BSEB Board",
     duration: "2021",
     // description:
