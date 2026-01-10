@@ -3,6 +3,43 @@ import { motion } from 'framer-motion'
 import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhone, FaTwitter } from 'react-icons/fa'
 const Contact = () => {
 
+
+
+
+
+
+
+
+const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "17922414-f7e1-4d22-8d27-c57fed0d2948");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        }).then((res) => res.json());
+
+        if (res.success) {
+            alert(res.message);
+        }
+    };
+
+
+
+
+
+
+
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -25,22 +62,22 @@ const Contact = () => {
                 mx-auto'>
                     {/* contact form */}
                     <div>
-                        <form className='space-y-6'>
+                        <form onSubmit={onSubmit} type="submit" className='space-y-6'>
                             <div>
-                                <label htmlFor="name" className='block
+                                <label htmlFor="" className='block
                                  text-gray-300'>Your Name</label>
-                                <input
+                                <input type="text"
                                     className='w-full bg-dark-300 border
-                                     border-dark-400 rounded-lg px-4 py-3'
-                                    type="text" />
+                                     border-dark-400 rounded-lg px-4 py-3' name='name' required
+                                     />
                             </div>
                             <div>
-                                <label htmlFor="email" className='block
+                                <label htmlFor="" className='block
                                  text-gray-300'>Email Address</label>
-                                <input
+                                <input type="email"
                                     className='w-full bg-dark-300 border
-                                     border-dark-400 rounded-lg px-4 py-3'
-                                    type="email" />
+                                     border-dark-400 rounded-lg px-4 py-3'name='email' required
+                                     />
                             </div>
 
 
@@ -48,23 +85,26 @@ const Contact = () => {
                             <div>
                                 <label htmlFor="" className='block
                                  text-gray-300'>Phone</label>
-                                <input
+                                <input  type="text"
                                     className='w-full bg-dark-300 border
-                                     border-dark-400 rounded-lg px-4 py-3'
-                                    type="text" />
+                                     border-dark-400 rounded-lg px-4 py-3' name='phone' required
+                                    />
                             </div>
 
 
 
 
                             <div>
-                                <label htmlFor="message" className='block
+                                <label htmlFor="" className='block
+                              
                                  text-gray-300'>Your Message</label>
-                                <input
+                                <input  type="text"
                                     className='w-full h-40 bg-dark-300 border
-                                     border-dark-400 rounded-lg px-4 py-3 outline-none'
-                                    type="text" />
+                                     border-dark-400 rounded-lg px-4 py-3 outline-none' name='message' required
+                                    />
+                                    
                             </div>
+                            
                             <button type='submit' className='w-full px-6 py-3
                             bg-purple rounded-lg font-medium hover:bg-purple-700
                             transition duration-300 cursor-pointer'>
@@ -72,6 +112,10 @@ const Contact = () => {
                             </button>
 
                         </form>
+
+
+
+
                     </div>
                     {/* Contact Information */}
                     <div className='space-y-8'>

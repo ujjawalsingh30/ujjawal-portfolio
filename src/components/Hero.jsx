@@ -1,6 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { assets } from '../assets/assets'
+import resume from '../assets/resume.pdf';
+
 
 
 const Hero = () => {
@@ -25,9 +27,14 @@ const Hero = () => {
                         experiences with modern technologies and innovative design.
                     </p>
                     <div className='flex space-x-4'>
-                        <a href="#project" className='px-6 py-3 bg-purple 
+
+
+                        <a href={resume} 
+                        download="Ujjawal_Singh_Resume.pdf"
+                        className='px-6 py-3 bg-purple 
                         rounded-lg font-medium hover:bg-purple-700 transition
-                        duration-300'>View Work</a>
+                        duration-300'>My resume</a>
+
                         <a href="#contact" className='px-6 py-3 border border-purple
                         rounded-lg font-medium hover:bg-purple/20 transition decoration-purple-300 '>Contect Me</a>
                     </div>

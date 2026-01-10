@@ -9,6 +9,7 @@ import projectImg5 from '../assets/project5.avif';
 import projectImg6 from '../assets/project6.avif';
 
 
+
 export const assets = {
   profileImg,
 }
@@ -148,7 +149,7 @@ export const educationData = [
     color: "purple"
   },
   {
-    role: "JRC Inter Collage, nayagoan, Vaishali (Bihar)",
+    role: "JRC Inter Collage, Nayagoan, Vaishali (Bihar)",
     company: "12th (PCM) - BSEB Board",
     duration: "2021 - 2023",
     // description:
@@ -156,7 +157,7 @@ export const educationData = [
     // color: "pink"
   },
   {
-    role: "S.R.C.H.S. (+2) RAJAPAKAR VAISHALI (BIHAR)",
+    role: "S.R.C.H.S. (+2)  Rajapakar  Vaishali (Bihar)",
     company: "10th - BSEB Board",
     duration: "2021",
     // description:

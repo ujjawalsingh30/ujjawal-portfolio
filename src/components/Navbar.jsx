@@ -42,11 +42,6 @@ duration-300 hover:text-purple group'>
     bg-purple transition-all duration-300 group-hover:w-full'></span>
                     </a>
 
-
-
-
-
-
                     <a href="#skills" className='relative text-white/80 transition 
 duration-300 hover:text-purple group'>
                         <span>Skills</span>
@@ -91,43 +86,37 @@ duration-300 hover:text-purple group'>
                         <a onClick={() => setShowMenu(!showMenu)} href="#home" className='relative text-white/80 transition 
 duration-300 hover:text-purple group'>
                             <span>Home</span>
-                            {/* <span className='absolute left-0 -bottom-1 w-0 h-0.5
-    bg-purple transition-all duration-300 group-hover:w-full'></span> */}
+
                         </a>
 
                         <a onClick={() => setShowMenu(!showMenu)} href="#about" className='relative text-white/80 transition 
 duration-300 hover:text-purple group'>
                             <span>About</span>
-                            {/* <span className='absolute left-0 -bottom-1 w-0 h-0.5
-    bg-purple transition-all duration-300 group-hover:w-full'></span> */}
-                        </a>
 
-                        <a onClick={() => setShowMenu(!showMenu)} href="#skills" className='relative text-white/80 transition 
-duration-300 hover:text-purple group'>
-                            <span>Skills</span>
-                            {/* <span className='absolute left-0 -bottom-1 w-0 h-0.5
-    bg-purple transition-all duration-300 group-hover:w-full'></span> */}
-                        </a>
-
-                        <a onClick={() => setShowMenu(!showMenu)} href="#projects" className='relative text-white/80 transition 
-duration-300 hover:text-purple group'>
-                            <span>Projects</span>
-                            {/* <span className='absolute left-0 -bottom-1 w-0 h-0.5
-    bg-purple transition-all duration-300 group-hover:w-full'></span> */}
                         </a>
 
                         <a onClick={() => setShowMenu(!showMenu)} href="#education" className='relative text-white/80 transition 
 duration-300 hover:text-purple group'>
                             <span>Education</span>
-                            {/* <span className='absolute left-0 -bottom-1 w-0 h-0.5
-    bg-purple transition-all duration-300 group-hover:w-full'></span> */}
+
+                        </a>
+
+                        <a onClick={() => setShowMenu(!showMenu)} href="#skills" className='relative text-white/80 transition 
+duration-300 hover:text-purple group'>
+                            <span>Skills</span>
+
+                        </a>
+
+                        <a onClick={() => setShowMenu(!showMenu)} href="#projects" className='relative text-white/80 transition 
+duration-300 hover:text-purple group'>
+                            <span>Projects</span>
+
                         </a>
 
                         <a onClick={() => setShowMenu(!showMenu)} href="#contact" className='relative text-white/80 transition 
 duration-300 hover:text-purple group'>
                             <span>Contact</span>
-                            {/* <span className='absolute left-0 -bottom-1 w-0 h-0.5
-    bg-purple transition-all duration-300 group-hover:w-full'></span> */}
+
                         </a>
                     </div>
                 )
